@@ -1,6 +1,6 @@
 package model;
 public abstract class Conta {
-    private double saldoDaConta;
+    protected double saldoDaConta;
     
     public Conta(Usuario user){
         this.saldoDaConta = 0;
@@ -12,7 +12,7 @@ public abstract class Conta {
     }
     
     //métodos abstrato
-    public abstract void fazerPix(double valor, Usuario user);
+    public abstract void fazerPix(double valor, Conta conta);
     
     
         
